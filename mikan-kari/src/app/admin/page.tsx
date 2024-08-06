@@ -24,7 +24,7 @@ export default function Admin() {
 
     return (
         <div>
-            <h1>Attendance Records</h1>
+            <h1>イベント記録</h1>
             <table>
                 <thead>
                     <tr>

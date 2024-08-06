@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import './globals.css';
 
 export default function Home() {
   const [name, setName] = useState('');
@@ -31,7 +30,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1>Event Attendance</h1>
+      <h1>イベントの出席を登録</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Name:</label>

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,17 +18,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet" />
+      </head>
       <body className={inter.className}>
         <header>
-          <h1>みかん</h1>
-          <p>アントレ用進捗管理サービス(仮)</p>
+          <a href="/" className="header_title">
+            <Image src="/logo.png" alt="logo" width={952} height={752} />
+            <div>
+              <h1>Cleanna Mikan(仮)</h1>
+              <p>アントレ用進捗管理サービス</p>
+            </div>
+          </a>
         </header>
         <main>
           {children}
         </main>
-        <footer>
-          <p>© 2024 asari-web.com</p>
-        </footer>
+        <Footer />
       </body>
     </html>
   );

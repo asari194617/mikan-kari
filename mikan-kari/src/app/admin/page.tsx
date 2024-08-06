@@ -1,7 +1,6 @@
-'use client';
+"use client";
 
 import { useEffect, useState } from 'react';
-import './../globals.css';
 
 interface Attendance {
     id: number;
@@ -29,9 +28,9 @@ export default function Admin() {
             <table>
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Event Name</th>
-                        <th>Date</th>
+                        <th>名前</th>
+                        <th>イベント名</th>
+                        <th>日付</th>
                     </tr>
                 </thead>
                 <tbody>
